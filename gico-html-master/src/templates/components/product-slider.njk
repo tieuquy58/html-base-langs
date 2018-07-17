@@ -1,0 +1,25 @@
+<div class="product-slider">
+	<h2 class="frm-title">Sản phẩm bạn đã xem</h2>
+	<div class="row js-carousel owl-carousel">
+		{% for i in range(0, 8) %}
+		<div class="product-item item col-xs-12 col-sm-4">
+			<a class="thumb gico-thumb" href="./detail.html">
+				<img src="https://media.static-adayroi.com/sys_master/images/h63/h60/15308788039710.jpg" alt="" class="thumb-src">
+			</a>
+			<div class="info">
+				<h3 class="title">
+				  	<a href="./detail.html">Thuốc Nam Xoang Điều Trị Viêm Xoang Mũi Cấp & Mãn Tính</a>
+				</h3>
+				<span class="sale-price">
+				  	400.000đ
+				</span>
+				<div class="clearfix"></div>
+				<span class="original-price">
+				  	900.000đ
+				</span>
+				<span class="discount-rate">-50%</span>
+			</div>
+		</div>
+	{% endfor %}
+	</div>
+</div>

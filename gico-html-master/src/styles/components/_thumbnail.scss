@@ -1,0 +1,26 @@
+.gico-thumb {
+  background-color: #fafafa;
+  overflow: hidden;
+  position: relative;
+
+  &.loaded {
+    background-color: transparent;
+  }
+
+  &:before {
+    content: "";
+    padding-top: 100%;
+    display: block;
+  }
+
+  .thumb-src {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

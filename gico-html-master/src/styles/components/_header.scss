@@ -1,0 +1,259 @@
+.gico-header {
+  background-color: $primary-color;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  position: relative;
+
+  .header-banner{
+  	background-color: #ffd356;
+  	img{
+  		max-width: 100%;
+  	}
+  }
+
+  .header-main{
+  	padding: 20px 0 12px;
+
+  	@media(min-width: $screen-lg) {
+    	.col-lg-7{
+    		width: 59.375%;
+    	}
+    	.col-lg-5{
+			width: 40.625%;
+    	}
+    }
+
+  	.col-logo{
+  		.gico-icon-logo{
+  			background: url('../images/logo.png') no-repeat left top scroll transparent;
+  			background-size: 100%;
+  			width: 140px;
+  			height: 56px;
+  			display: block;
+  		}
+  	}
+  	.col-search{
+  		input.form-control{
+  			border-radius: 4px 0 0 4px;
+  			background: #fff;
+  			height: 48px;
+  			padding: 6px 19px;
+  			border-color: #fff;
+
+  			&:hover,&:focus{
+  				box-shadow: none;
+  				border-right-color: #e1e1e7;
+  			}
+  		}
+  		.input-group-btn > .btn{
+  			font-size: 18px;
+  			padding: 12px 14px;
+  			vertical-align: middle;
+  			color: $primary-color;
+  			border-color: #fff;
+  			border-left-color: #e1e1e7;
+
+  			&:hover,&:focus,&:active{
+  				background: #fff;
+  				box-shadow: none;
+  				border-color: #fff;
+  				border-left-color: #e1e1e7;
+  			}
+
+  			.gico-icon{
+  				vertical-align: middle;
+  			}
+  		}
+  	}
+
+  	.col-action{
+  		list-style: none;
+  		margin: 0;
+  		padding: 8px 0;
+  		float: right;
+
+  		li{
+  			position: relative;
+  			padding-left: 37px;
+  			float: left;
+  			margin-right: 28px;
+  			a{
+  				color: #fff;
+		      @include default-hover();
+  			}
+  			.gico-icon{
+  				position: absolute;
+  				left: 0;
+  				top: 50%;
+  				margin-top: -13px;
+  				font-size: 26px;
+  				vertical-align: middle;
+  			}
+
+  		}
+  	}
+  }
+}
+.navbar{
+	border-radius: 0;
+	min-height:50px;
+  background: #fff;
+  border: 0 none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  margin: 0;
+	.navbar-collapse{
+		padding: 0;
+	}
+}
+.navbar-default{
+	.navbar-nav > li > a{
+		font-size: 17px;
+		font-weight: 500;
+		color: $text-color;
+    padding: 19px 27px 17px;
+    @include default-hover();
+    &:hover{
+      color: $primary-color;
+    }
+	}
+}
+
+.payment-header{
+  background-color: $primary-color;
+  padding: 16px 0;
+
+  .col-logo{
+    .gico-icon-logo{
+      background: url('../images/logo.png') no-repeat left top scroll transparent;
+      background-size: 100%;
+      width: 140px;
+      height: 56px;
+      display: block;
+    }
+  }
+
+  .col-support{
+    p{
+      float: right;
+      position: relative;
+      border: solid 1px rgba(255, 255, 255, 0.4);
+      margin: 0;
+      padding: 7px 30px 7px 58px;
+      color: $light-color;
+      font-size: 13px;
+      letter-spacing: -0.8px;
+      max-width: 183px;
+      @include default-radius();
+
+      span{
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      .gico-icon{
+        position: absolute;
+        top: 50%;
+        left: 19px;
+        transform: translateY(-50%);
+        font-size: 26px;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm-max){
+    .col-support{
+      float: right;
+    }
+  }
+
+
+  .step-container {
+    width: 100%;
+    margin: 0 auto; 
+    overflow: hidden;
+
+    .step-bar {
+      margin: 0;
+
+      li {
+        list-style-type: none;
+        width: 33.33333333333333%;
+        float: left;
+        font-size: 15px;
+        position: relative;
+        text-align: center;
+        color: #fff;
+
+        &:after {
+          width: 24px;
+          height: 24px;
+          line-height: 21px;
+          border: 1px solid #fff;
+          display: block;
+          text-align: center;
+          margin: 6px auto 0;
+          border-radius: 50%;
+          background-color: $primary-color;
+          position: relative;
+          z-index: 20;
+        }
+
+        &:before {
+          width: 100%;
+          height: 2px;
+          content: '';
+          position: absolute;
+          background-color: #fff;
+          top: 35px;
+          left: -50%;
+          z-index: 10;
+        }
+
+        &:first-child:before {
+          content: none;
+        }
+
+        &.active {
+          color: $light-color;
+
+          &:after{
+            color: $primary-color;
+            font-weight: 500;
+            border-color: $light-color;
+            background: $light-color;
+          }
+        }
+
+        &.step-1{
+
+          &:after{
+            content: '1';
+          }
+        }
+
+        &.step-2{
+
+          &:after{
+            content: '2';
+          }
+        }
+
+        &.step-3{
+
+          &:after{
+            content: '3';
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .step-bar li.active + li:before {
+    background-color: #fff;
+  }
+
+}

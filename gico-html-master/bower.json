@@ -1,0 +1,44 @@
+{
+  "name": "vbase-html",
+  "description": "vHTML Boilerplate",
+  "main": "index.js",
+  "authors": [
+    "Ha Pham Van"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "2.2.4",
+    "bootstrap": "3.3.7",
+    "bootstrap-sass": "3.3.7",
+    "animate-sass": "^0.8.2",
+    "owlcarousel": "^1.7.8",
+    "jquery-lazy": "^2.3.4",
+    "xzoom": "^1.0.12",
+    "fancybox": "^2.1.7",
+    "swiper": "^4.2.6",
+    "animate.css":"3.6.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./js/transition.js",
+        "./js/modal.js",
+        "./js/collapse.js",
+        "./js/tab.js",
+        "./js/dropdown.js"
+      ]
+    },
+    "bootstrap-sass": {
+      "main": []
+    },
+    "animate-sass": {
+      "main": []
+    }
+  }
+}

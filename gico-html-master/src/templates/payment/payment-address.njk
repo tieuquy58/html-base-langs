@@ -1,0 +1,78 @@
+<div class="payment-body">
+	<h3 class="frm-title">Phương thức thanh toán</span></h3>
+	<div class="payment-list address">
+      	<ul class="reset">
+      		{% for i in range(0, 2) %}
+      		<li class="row">
+                        <div class="radio-box col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            			<label class="styled-radio type2">
+                              <input type="radio" class="styled-radio-input" name="radioPay" value="">
+                              <span class="styled-radio-box"></span>
+                        	Lù Quang Minh - 0916835955
+                              </label>
+                              <p>485 Minh Khai - Phường Minh Khai - Quận Hai Bà Trưng - Hà Nội</p>
+                        </div>
+                        <div class="action col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <a class="btn btn-default btn-edit" href="#" title="Sửa">Sửa</a>
+                              <a class="btn btn-default btn-trash" href="#" title="Xóa"><i class="gico-icon icon-trash"></i></a>
+                        </div>
+      		</li>
+      		{% endfor %}
+                  <li class="row no-border">
+                        <div class="radio-box col-xs-12">
+                              <label class="styled-radio type2">
+                              <input type="radio" class="styled-radio-input" name="radioPay" value="">
+                              <span class="styled-radio-box"></span>
+                              Thêm địa chỉ khác
+                              </label>
+                        </div>
+                  </li>
+                  <li class="notice">
+                        <div class="form-group">
+                              <label>Lời nhắn <span>(Không bắt buộc)</span></label>
+                              <textarea placeholder="VD: chuyển ngoài giờ hành chính" class="form-control" rows="3"></textarea>
+                        </div>
+                  </li>
+      	</ul>
+	</div>
+</div>
+<div class="payment-mid address">
+      <div class="time-cod">
+            <h3 class="frm-title">Thời gian giao hàng dự kiến</span></h3>
+            <form class="form-inline">
+                  <div class="form-group">
+                        <label>Giao hàng đến</label>
+                        <div class="select-box">
+                              <select>
+                                    <option selected>-- Tỉnh --</option>
+                                    <option>TP Hà Nội</option>
+                                    <option>TP Hồ Chí Minh</option>
+                                    <option>TP Hải Phòng</option>
+                                    <option>TP Đà Nẵng</option>
+                              </select>
+                        </div>
+                        <label>bằng</label>
+                        <div class="select-box">
+                              <select>
+                                    <option selected>-- Nhà vận chuyển</option>
+                                    <option>VN Post</option>
+                                    <option>GHTK</option>
+                                    <option>GHN</option>
+                              </select>
+                        </div>
+                        <label>với <span>MIỄN PHÍ VẬN CHUYỂN</span></label>
+                  </div>
+                  <p>Thời gian giao hàng <span>6-7 ngày</span></p>
+            </form>
+      </div>
+      <div class="order-vat">
+            <label class="styled-checkbox">
+                  <input type="checkbox" class="styled-checkbox-input" name="checkboxVAT" value="">
+                  <span class="styled-checkbox-box"></span>
+                  Xuất hóa đơn GTGT cho khách hàng
+            </label>
+      </div>
+</div>
+<div class="payment-bot address">
+      <button class="btn btn-default btn-primary btn-full">Tiếp tục thanh toán <i class="gico-icon icon-right-arrow"></i></button>
+</div>

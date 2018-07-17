@@ -1,0 +1,22 @@
+{% extends "layouts/default.njk" %}
+{% set pageTitle = 'Giỏ hàng' %}
+{% set bodyClasses = 'page-cart' %}
+{% block content %}
+  <div class="gico-main cart-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            {% include "./cart/cart-table.njk" %}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          {% include "./cart/cart-sidebar.njk" %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+            {% include "./components/product-slider.njk" %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

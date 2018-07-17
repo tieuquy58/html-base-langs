@@ -1,0 +1,28 @@
+{% extends "layouts/default.njk" %}
+{% set pageTitle = 'Trang chủ' %}
+{% set bodyClasses = '' %}
+{% block content %}
+  {% include "./components/banner-slider.njk" %}
+  {% include "./components/sale-banner.njk" %}
+  {% include "./components/sale-product.njk" %}
+  <div class="home-products">
+  	<div class="container">
+  		<div class="box-products">
+  			<h2 class="title"><span class="brown-bg"><i class="gico-icon icon-steak"></i></span>Ngũ cốc truyền thống</h2>
+  			{% include "./components/home-product.njk" %}
+  		</div>
+  		<div class="box-products">
+  			<h2 class="title"><span class="orange-bg"><i class="gico-icon icon-pizza"></i></span>Đồ khô tổng hợp</h2>
+  			{% include "./components/home-product.njk" %}
+  		</div>
+  		<div class="box-products">
+  			<h2 class="title"><span class="brown-bg"><i class="gico-icon icon-corn"></i></span>Đặc sản các vùng miền</h2>
+  			{% include "./components/home-product.njk" %}
+  		</div>
+  		<div class="box-products">
+  			<h2 class="title"><span class="borange-bg"><i class="gico-icon icon-banana"></i></span>Sản phẩm truyền thống</h2>
+  			{% include "./components/home-product.njk" %}
+  		</div>
+  	</div>
+  </div>
+{% endblock %}

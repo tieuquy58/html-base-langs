@@ -1,0 +1,69 @@
+<header class="gico-header">
+	<div class="header-banner">
+		<div class="container">
+			<div class="row">
+				{% for i in range(0, 3) %}
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<a href="#" title="Bão sale">
+						<img width="100%" height="70px" alt="" src="https://vcdn.tikicdn.com/ts/banner/ac/b1/28/335f07b5373d35b7bca12643087c195f.jpg" />
+					</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	<div class="header-main">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+					<div class="row">
+						<div class="col-xs-12 col-sm-3 col-md-3 col-logo">
+							<a href="./index.html" title="Gico.vn">
+								<span class="gico-icon-logo"></span>
+							</a>
+						</div>
+						<div class="col-xs-12 col-sm-9 col-md-9 col-search">
+							<div class="input-group">
+						      	<input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm hoặc thương hiệu mong muốn">
+						      	<span class="input-group-btn">
+						        	<button class="btn btn-default" type="button"><i class="gico-icon icon-search"></i></button>
+						      	</span>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+					<ul class="col-action">
+						<li>
+							<a href="#" title="Trung tâm CSKH"><i class="gico-icon icon-headset"></i>Trung tâm<br/>CSKH</a>
+						</li>
+						<li>
+							<a href="#" title="Kiểm tra đơn hàng"><i class="gico-icon icon-bill"></i>Kiểm tra<br/>đơn hàng</a>
+						</li>
+						<li>
+							<a href="#"  data-toggle="modal" data-target="#modalLogin" title="Đăng nhập & Đăng ký - Tài khoản"><i class="gico-icon icon-account"></i>Đăng nhập & Đăng ký<br/>Tài khoản</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<nav class="navbar navbar-default">
+	<div class="container">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				{% for i in range(0, 7) %}
+				<li><a href="#">Khuyến mại hot</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</nav>

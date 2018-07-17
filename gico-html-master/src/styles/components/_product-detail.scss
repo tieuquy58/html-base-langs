@@ -1,0 +1,203 @@
+.pd-main{
+	.pd-box{
+		@include box-white;
+		margin-bottom: 24px;
+	}
+
+	.pd-detail{
+		padding: 24px 26px 36px 14px;
+
+		.row {
+
+			> .product-image{
+				width: 42.466%;
+
+				.product-zoom{
+					position: relative;
+					display: table;
+    				width: 100%;
+
+    				.xzoom-container{
+    					display: table;
+    					width: 100%;
+    				}
+
+    				.xzoom{
+    					float: right;
+    					box-shadow: none;
+    				}
+
+    				.xzoom-thumbs{
+    					float: left;
+    					max-width: 75px;
+    					margin: 42px 0;
+    					max-height: 324px;
+    					position: relative;
+
+    					a{
+    						display: block;
+    						border: 1px solid $border-color;
+    						@include default-radius();
+    						padding: 9px;
+    						margin: 0 0 8px;
+    						background: #fff;
+
+    						img.xzoom-gallery{
+    							margin: 0;
+    							border: 0 none;
+    							max-width: 100%;
+    						}
+
+    						&.xactive,&:hover{
+    							border-color: $primary-color;
+    						}
+
+    						&:last-child{
+    							margin-bottom: 0;
+    						}
+    					}
+
+    					.owl-prev,.owl-next{
+    						position: absolute;
+    						top: -48px;
+    						left: 0;
+    						right: 0;
+    						margin: 0 auto;
+    						color: #757575;
+    						font-size: 8px;
+    						width: 24px;
+    						height: 24px;
+    						text-align: center;
+    						line-height: 24px;
+    					}
+    					.owl-next{
+    						top: auto;
+    						bottom: -48px;
+    					}
+
+    					.owl-next:hover,.owl-prev:hover{
+    						border:1px solid $text-color;
+    						background: #fff;
+    						color: $text-color;
+    						@include default-radius();
+    					}
+
+    				}
+
+    				.js-thumb-slider{
+    					width: 75px;
+    					float: left;
+    					text-align: left;
+
+    				}	
+				}
+			}
+
+			> .product-content{
+				width: 57.534%;
+			}
+		}
+	}
+
+    .pd-viewed{
+        .product-slider{
+            padding: 26px 23px 40px 23px;
+
+            .js-carousel.owl-carousel.owl-loaded{
+                .owl-next{
+                    right: -23px;
+                }
+
+                .owl-prev{
+                    left: -23px; 
+                }
+            }
+        }
+    }
+
+    .pd-info{
+        padding: 26px 23px 40px 23px;
+
+        .sub-title{
+            color: $text-color;
+            font-weight: 500;
+            display: block;
+            margin: 0 0 25px;
+            font-size: 17px;
+            text-transform: uppercase;
+        }
+
+        .col-xs-12{
+            font-size: 15px;
+        }
+
+        .col-info{
+            .desc.in{
+                height: 500px;
+                overflow: hidden;
+            }
+            .desc.out{
+                height: auto;
+            }
+
+            a.more-btn{
+                display: block;
+                max-width: 356px;
+                width: 100%;
+                margin: 0 auto;
+                font-size: 15px;
+                color: $primary-color;
+                border: 1px solid $border-color;
+                padding: 12px 12px;
+                text-align: center;
+                background: #fff;
+                @include default-radius();
+                @include default-hover();
+
+                &:hover{
+                    background: $primary-color;
+                    color: $light-color;
+                }
+            }
+        }
+
+        .col-tech{
+            .div-table{
+                .dt-row{
+                    > div{
+                        padding: 17px 22px;
+
+                        &:first-child{
+                            background:$secondary-bg;
+                            font-weight: 500;
+                            width: 183px;
+                        }
+                    }
+
+                    &:first-child > div:first-child{
+                        border-radius: 4px 0 0 0;
+                    }
+
+                    &:first-child > div:last-child{
+                        border-radius: 0 4px 0 0;
+                    }
+
+                    &:last-child > div:first-child{
+                        border-radius: 0 0 0 4px;
+                    }
+
+                    &:last-child > div:last-child{
+                        border-radius: 0 0 4px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .pd-review{
+        padding: 26px 23px 40px 23px;
+    }
+}
+.page-detail-product .pd-main{
+    background-color: $breadcrumb-bg;
+}

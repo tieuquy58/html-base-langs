@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////
+// Import everything to generate your animate sass module //
+////////////////////////////////////////////////////////////
+@import "bower_components/animate-sass/helpers/mixins";
+@import	"bower_components/animate-sass/helpers/settings";
+@import	"bower_components/animate-sass/helpers/base";
+
+// ATTENTION
+@import	"bower_components/animate-sass/animations/attention-seekers/bounce";
+@import	"bower_components/animate-sass/animations/attention-seekers/flash";
+@import	"bower_components/animate-sass/animations/attention-seekers/pulse";
+@import	"bower_components/animate-sass/animations/attention-seekers/shake";
+@import	"bower_components/animate-sass/animations/attention-seekers/swing";
+@import	"bower_components/animate-sass/animations/attention-seekers/wiggle";
+@import	"bower_components/animate-sass/animations/attention-seekers/wobble";
+@import	"bower_components/animate-sass/animations/attention-seekers/tada";
+
+// BOUNCE
+@import "bower_components/animate-sass/animations/bounce-enter/bounceIn";
+@import	"bower_components/animate-sass/animations/bounce-enter/bounceInDown";
+@import	"bower_components/animate-sass/animations/bounce-enter/bounceInLeft";
+@import	"bower_components/animate-sass/animations/bounce-enter/bounceInRight";
+@import	"bower_components/animate-sass/animations/bounce-enter/bounceInUp";
+@import	"bower_components/animate-sass/animations/bounce-exit/bounceOut";
+@import	"bower_components/animate-sass/animations/bounce-exit/bounceOutDown";
+@import	"bower_components/animate-sass/animations/bounce-exit/bounceOutLeft";
+@import	"bower_components/animate-sass/animations/bounce-exit/bounceOutRight";
+@import	"bower_components/animate-sass/animations/bounce-exit/bounceOutUp";
+
+// FADE
+@import	"bower_components/animate-sass/animations/fade-enter/fadeIn";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInDown";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInDownBig";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInLeft";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInLeftBig";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInRight";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInRightBig";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInUp";
+@import	"bower_components/animate-sass/animations/fade-enter/fadeInUpBig";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOut";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutDown";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutDownBig";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutLeft";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutLeftBig";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutRight";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutRightBig";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutUp";
+@import	"bower_components/animate-sass/animations/fade-exit/fadeOutUpBig";
+
+// FLIP
+@import "bower_components/animate-sass/animations/flippers/flip";
+@import	"bower_components/animate-sass/animations/flippers/flipInX";
+@import	"bower_components/animate-sass/animations/flippers/flipInY";
+@import	"bower_components/animate-sass/animations/flippers/flipOutX";
+@import	"bower_components/animate-sass/animations/flippers/flipOutY";
+
+// LIGHTSPEED
+@import	"bower_components/animate-sass/animations/lightspeed/lightSpeedIn";
+@import	"bower_components/animate-sass/animations/lightspeed/lightSpeedOut";
+
+// ROTATE
+@import	"bower_components/animate-sass/animations/rotate-enter/rotateIn";
+@import	"bower_components/animate-sass/animations/rotate-enter/rotateInDownLeft";
+@import	"bower_components/animate-sass/animations/rotate-enter/rotateInDownRight";
+@import	"bower_components/animate-sass/animations/rotate-enter/rotateInUpLeft";
+@import	"bower_components/animate-sass/animations/rotate-enter/rotateInUpRight";
+@import	"bower_components/animate-sass/animations/rotate-exit/rotateOut";
+@import	"bower_components/animate-sass/animations/rotate-exit/rotateOutDownLeft";
+@import	"bower_components/animate-sass/animations/rotate-exit/rotateOutDownRight";
+@import	"bower_components/animate-sass/animations/rotate-exit/rotateOutUpLeft";
+@import	"bower_components/animate-sass/animations/rotate-exit/rotateOutUpRight";
+
+// SLIDE
+@import "bower_components/animate-sass/animations/slide-enter/slideInDown";
+@import	"bower_components/animate-sass/animations/slide-enter/slideInLeft";
+@import	"bower_components/animate-sass/animations/slide-enter/slideInRight";
+@import	"bower_components/animate-sass/animations/slide-enter/slideInUp";
+@import	"bower_components/animate-sass/animations/slide-exit/slideOutDown";
+@import	"bower_components/animate-sass/animations/slide-exit/slideOutLeft";
+@import	"bower_components/animate-sass/animations/slide-exit/slideOutRight";
+@import	"bower_components/animate-sass/animations/slide-exit/slideOutUp";
+
+// SPECIAL
+@import "bower_components/animate-sass/animations/special/hinge";
+@import	"bower_components/animate-sass/animations/special/rollIn";
+@import	"bower_components/animate-sass/animations/special/rollOut";
+
+// ZOOM
+@import "bower_components/animate-sass/animations/zoom-enter/zoomIn";
+@import	"bower_components/animate-sass/animations/zoom-enter/zoomInDown";
+@import	"bower_components/animate-sass/animations/zoom-enter/zoomInLeft";
+@import	"bower_components/animate-sass/animations/zoom-enter/zoomInRight";
+@import	"bower_components/animate-sass/animations/zoom-enter/zoomInUp";
+@import	"bower_components/animate-sass/animations/zoom-exit/zoomOut";
+@import	"bower_components/animate-sass/animations/zoom-exit/zoomOutDown";
+@import	"bower_components/animate-sass/animations/zoom-exit/zoomOutLeft";
+@import	"bower_components/animate-sass/animations/zoom-exit/zoomOutRight";
+@import	"bower_components/animate-sass/animations/zoom-exit/zoomOutUp";

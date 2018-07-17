@@ -1,0 +1,16 @@
+.btn-primary{
+	background: $primary-color;
+	color: #fff;
+	border: 0 none;
+	padding: 10px 12px;
+	@include default-hover();
+	&:hover,&:focus,&:active,&:active:focus{
+		box-shadow: none;
+		background-color: $primary-color;
+	}
+}
+
+.btn-full{
+	display: block;
+	width: 100%;
+}

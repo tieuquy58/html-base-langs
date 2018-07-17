@@ -1,0 +1,28 @@
+{% extends "layouts/default.njk" %}
+{% set pageTitle = 'Cate' %}
+{% set bodyClasses = 'page-pdp' %}
+{% block content %}
+  {% include "./components/breadcrumb.njk" %}
+    {% include "./components/banner.njk" %}
+      {% include "./pdp/category.njk" %}
+  <div class="gico-main pdp-main">
+    <div class="container">
+      {% include "./pdp/top-link.njk" %}
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-2">
+          {% include "./pdp-filter/index.njk" %}
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-10">
+          <div class="pdp-container">
+            <div class="pdp-header">
+              {% include "./pdp/pdp-header.njk" %}
+            </div>
+            <div class="pdp-body">
+              {% include "./pdp/product-list.njk" %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

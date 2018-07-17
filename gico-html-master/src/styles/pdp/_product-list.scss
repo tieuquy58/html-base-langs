@@ -1,0 +1,21 @@
+.gico-product-list {
+  @media(max-width: $screen-sm-max) {
+    margin-right: -3px;
+    margin-bottom: 24px;
+
+    > .row {
+      > div {
+        padding: 0;
+        margin-left: -1px;
+        margin-top: -1px;
+      }
+    }
+
+    .product-item {
+      border: 1px solid $border-color-2;
+      text-align: center;
+      padding-bottom: 12px;
+      margin: 0;
+    }
+  }
+}

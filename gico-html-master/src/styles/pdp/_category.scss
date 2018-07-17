@@ -1,0 +1,123 @@
+.gico-category-list {
+  margin-top: -48px;
+  @media(max-width: $screen-sm-max) {
+    margin-top: -16px;
+  }
+
+  .content {
+    border-radius: $border-radius-base;
+    background-color: $light-color;
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    padding: 16px;
+    @media(max-width: $screen-sm-max) {
+      padding: 0 12px;
+    }
+  }
+
+  .item {
+    width: 100%;
+    text-align: center;
+    color: inherit;
+    @include default-hover();
+    display: block;
+    @media(max-width: $screen-sm-max) {
+      margin: 12px auto;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    .thumb {
+      width: 48px;
+      margin: auto;
+      @media(max-width: $screen-sm-max) {
+        width: 64px;
+      }
+    }
+
+    .info {
+      .title {
+        margin: 12px 0 0;
+        font-weight: 400;
+        font-size: 19px;
+        @include text-overflow();
+        @media(max-width: $screen-md-max) {
+          font-size: 16px;
+        }
+        @media(max-width: $screen-sm-max) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  @media(min-width: $screen-md-min) {
+    .row {
+      > div {
+        width: 14.2857143%;
+      }
+    }
+  }
+  @media(max-width: $screen-sm-max) {
+    .row {
+      margin: 0;
+      white-space: nowrap;
+      overflow: auto;
+      display: block;
+
+      > div {
+        float: none;
+        display: inline-block;
+        width: 128px;
+      }
+    }
+  }
+}
+
+.gico-category-toplink {
+  margin-bottom: 24px;
+  @media(max-width: $screen-sm-max) {
+    margin-bottom: 16px;
+  }
+  @media(max-width: $screen-xs-max) {
+    margin-bottom: 12px;
+  }
+
+  .item {
+    background-color: $red-color;
+    color: $light-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 19px;
+    border-radius: $border-radius-base;
+    @include default-hover();
+    @include text-overflow();
+    @media(max-width: $screen-sm-max) {
+      font-size: 16px;
+    }
+    @media(max-width: $screen-xs-max) {
+      font-size: 14px;
+    }
+  }
+  @media(max-width: $screen-sm-max) {
+    .row {
+      margin: 0;
+      white-space: nowrap;
+      overflow: auto;
+      display: block;
+
+      > div {
+        float: none;
+        display: inline-block;
+        width: auto;
+      }
+    }
+  }
+}

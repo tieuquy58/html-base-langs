@@ -1,0 +1,17 @@
+{% extends "layouts/pay-layout.njk" %}
+{% set pageTitle = 'Chọn địa chỉ nhận hàng' %}
+{% set bodyClasses = 'page-payment' %}
+{% block content %}
+<div class="gico-main payment-main">
+	<div class="container">
+	  <div class="row">
+	    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	        {% include "./payment/payment-address.njk" %}
+	    </div>
+	    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	      {% include "./payment/payment-sidebar.njk" %}
+	    </div>
+	  </div>
+	</div>
+</div>s
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends "layouts/pay-layout.njk" %}
+{% set pageTitle = 'Thanh toán thành công! Cảm ơn' %}
+{% set bodyClasses = 'page-payment-thank' %}
+{% block content %}
+<div class="gico-main payment-main">
+	<div class="container">
+		<div class="thank-content">
+			<div class="row">
+				<div class="col-xs-5 col-img">
+					<img src="https://media.static-adayroi.com/sys_master/images/h25/h6b/15928479711262.png" alt="" />
+				</div>
+				<div class="col-xs-7 col-content">
+					<h1>Thanh toán thành công</h1>
+					<label>Mã đơn hàng: 0382432</label>
+					<div class="clearfix"></div>
+					<p>Cám ơn Quý khách <span>Lù Quang Minh</span> đã mua hàng trên Gico.</p>
+					<p>Nhằm giúp việc xử lý đơn hàng nhanh hơn nữa, Gico sẽ gọi điện hoặc gửi tin nhắn đến Quý khách để xác nhận
+					đơn hàng. Nếu Quý khách có nhu cầu xem lại thông tin mua hàng, vui lòng kiểm tra, xác nhận đơn hàng đã
+					được gửi qua email. </p>
+					<p>Trong trường hợp Quý khách không phải là người trực tiếp nhận hàng. Quý khách vui lòng thông báo cho người nhận bật điện thoại để nhận liên lạc từ nhân viên giao hàng Gico</p>
+				</div>
+			</div>
+		</div>
+		<div class="order-review">
+			<h3 class="frm-title">Thông tin người nhận và đặt hàng</span></h3>
+			<div class="customer-info">
+				<p class="text-medium">Lù Quang Minh - 092183128</p>
+				<p>458 Minh Khai - Phường Minh Khai - Quận Hai Bà Trừng - Hà Nội</p>
+				<p>Gia trước 20:00 ngày 19/1/2017</p>
+			</div>
+			<div class="order-table">
+				<div class="order-head">
+					<div class="order-name text-left">
+						Tên sản phẩm
+					</div>
+					<div class="order-manu text-center">
+						Nhà cung cấp
+					</div>
+					<div class="order-price text-center">
+						Đơn giá
+					</div>
+					<div class="order-qty text-center">
+						Số lượng
+					</div>
+					<div class="order-subprice text-center">
+						Tổng tiền
+					</div>
+				</div>
+				<div class="order-body">
+					{% for i in range(0, 2) %}
+					<div class="order-item">
+						<div class="order-name text-left">
+							<img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/7f/6b/06/0dfbfb741726ebf3306a6d2f94ff20f1.jpg" alt="" />
+							<h2>Điện Thoại Samsung Galaxy Note 8 - Hàng Chính Hãng</h2>
+						</div>
+						<div class="order-manu text-center">
+							Samsung Việt Nam
+						</div>
+						<div class="order-price text-center">
+							10.000.000đ
+						</div>
+						<div class="order-qty text-center">
+							1
+						</div>
+						<div class="order-subprice text-center">
+							10.000.000đ
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+				<div class="order-footer">
+					<ul class="reset">
+						<li>
+							<label>Tổng tiền</label>
+							<span>20,000,000đ</span>
+						</li>
+						<li class="ship">
+							<label>Phí vận chuyển đơn hàng</label>
+							<span>Miễn phí</span>
+						</li>
+						<li class="voucher">
+							<label>Ưu đãi</label>
+							<span>-200.000đ</span>
+						</li>
+						<li class="sub-price">
+							<label>Số tiền cần thanh toán</label>
+							<span>19,800,000</span>
+							<span class="note">( Đã bao gồm VAT)</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

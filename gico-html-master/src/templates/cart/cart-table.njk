@@ -1,0 +1,36 @@
+<div class="cart-table">
+    <h3 class="title">Giỏ hàng <span>(2 sản phẩm)</span></h3>
+    {% for i in range(0, 3) %}
+    <div class="cart-table-body">
+    	<div class="cart-image">
+			<img src="https://media.static-adayroi.com/sys_master/images/h63/h60/15308788039710.jpg" alt="" class="img-responsive">
+    	</div>
+		<div class="cart-item">
+			<div class="cart-info">
+				<h2 class="text-medium"><a href="#" title="Balo Thời Trang SENSZX B024 - Nâu">Balo Thời Trang SENSZX B024 - Nâu</a></h2>
+				<label>Cung cấp bởi <a href="#" title="GICO">GICO</a></label>
+				<p class="action">
+					<a href="#" title="Xóa"><i class="gico-icon icon-delete"></i>Xóa</a>
+					<a href="#" title="Để lại mua sau"><i class="gico-icon icon-backup"></i>Để lại mua sau</a>
+				</p>
+			</div>
+			<div class="cart-price">
+				<span class="sale-price">400.000đ</span>
+				<span class="original-price">900.000đ</span>
+				<span class="discount-rate">-50%</span>
+			</div>
+			<div class="cart-qty">
+				<div class="input-group js-counter">
+					<span class="input-group-btn">
+						<button class="btn btn-default btn-incre" type="button"><i class="gico-icon icon-plus"></i></button>
+					</span>
+					<input readonly="true" type="text" class="form-control" value="1">
+					<span class="input-group-btn">
+						<button class="btn btn-default btn-decre" type="button"><i class="gico-icon icon-minus"></i></button>
+					</span>
+				</div>
+			</div>
+		</div>
+    </div>
+    {% endfor %}
+</div>

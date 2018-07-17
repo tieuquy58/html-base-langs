@@ -1,0 +1,71 @@
+.text-black {
+  font-weight: 900;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-semibold {
+  font-weight: 600;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-normal {
+  font-weight: 400;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-upper{
+	text-transform: uppercase;
+}
+
+.text-lowcase{
+	text-transform: lowercase;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+.text-secondary {
+  color: $secondary-color;
+}
+
+.text-red{
+	color: $red-color;
+}
+
+.fs-14{
+  font-size:14px;
+}
+
+.fs-15{
+  font-size:15px;
+}
+
+.fs-16{
+  font-size:16px;
+}
+
+.fs-17{
+  font-size:17px;
+}
+
+.fs-18{
+  font-size:18px;
+}
+
+.fs-19{
+  font-size:19px;
+}
+
+.fs-20{
+  font-size:20px;
+}

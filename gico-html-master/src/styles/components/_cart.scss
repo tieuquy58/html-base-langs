@@ -1,0 +1,405 @@
+.cart-main{
+  padding: 17px 0 72px;
+  background-color: #edecf2;
+  .cart-table{
+  	background-color: #fff;
+  	padding: 21px 37px 21px 26px;
+  	border-radius: 4px;
+
+  	h3.title{
+  		margin: 0 0 23px;
+  		text-align: left;
+			color: #333333;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: normal;
+		  position: relative;
+		  height: 29px;
+      padding-left: 17px;
+		
+
+			span{
+				font-size: 16px;
+				color: #999;
+			}
+
+			&:before{
+				background-color: #199ce7;
+				display: block;
+				content: '';
+				width: 4px;
+				height: 21px;
+				position: absolute;
+			  top: 50%;
+			  left: -3px;
+			  margin-top: -8px;
+			}
+  	}
+
+    .cart-image{
+      width: 116px;
+      height: 116px;
+      text-align: center;
+      overflow: hidden;
+      float: left;
+    }
+
+    .cart-table-body {
+      display: block;
+      overflow: hidden;
+      margin: 0 0 21px;
+      &:last-child .cart-item{
+        border-bottom: 0 none;
+      }
+    }
+
+    .cart-item{
+      margin-left: 139px;
+      display: block;
+      overflow: hidden;
+      border-bottom: solid 1px #e1e1e7;
+      position: relative;
+      height: 124px;
+
+      .cart-info{
+        float: left;
+        width: 65%;
+        padding: 0 20px 0 0;
+
+        h2{
+          margin: 0 0 8px;
+          font-size: 15px;
+          line-height: 18px;
+
+          a{
+            font-size: 15px;
+            line-height: 18px;
+            color: #333;
+            @include default-hover();
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+
+        label{
+          margin: 0;
+          font-weight: 400;
+
+          a{
+            color: $primary-color;
+            @include default-hover();
+          }
+        }
+
+        .action{
+          position: absolute;
+          left: 1px;
+          bottom: 23px;
+          margin: 0;
+          a{
+            margin-right: 20px;
+		  color: #666666;
+		  line-height: 16px;
+		  height: 16px;
+		  display: inline-block;
+            @include default-hover();
+
+            &:hover {
+			color: $primary-color;
+			.gico-icon{
+				color: $primary-color;
+			}
+            }
+
+    .gico-icon{
+			vertical-align: bottom;
+			margin-right: 7px;
+			line-height: 16px;
+			color: #000;
+			@include default-hover();
+
+    }
+  }
+          
+        }
+	}
+	.cart-price{
+		float: left;
+		width: 20%;
+    padding: 5px 20px 0 0;
+		span{
+			display: block;
+			margin: 0 0 8px;
+		}
+
+		.sale-price{
+			color: #fe5b65;
+			font-size: 17px;
+			font-weight: 500;
+		}
+
+		.original-price{
+			color: #666;
+			text-decoration: line-through;
+			font-size: 14px;
+		}
+
+		.discount-rate{
+			display: inline-block;
+			background: #fe5b65;
+			border-radius: 2px;
+			width: 40px;
+			height: 18px;
+			line-height: 18px;
+			color: #fff;
+			text-align: center;
+			font-weight: 500;
+		}
+	}
+    }
+
+
+  .cart-qty{
+    float: left;
+    width: 15%;
+    padding: 5px 0 0;
+
+    .input-group{
+      width: 88px;
+      border: solid 1px #cbcbd0;
+      border-radius: 3px;
+      overflow: hidden;
+      float: right;
+
+      input.form-control{
+        border: 0 none;
+        height: 32px;
+        text-align: center;
+        padding: 2px 2px;
+        &:hover,&:focus{
+          box-shadow: none;
+        }
+        &[readonly]{
+          background: none;
+        }
+      }
+
+      .input-group-btn{
+        > .btn{
+          border: 0 none;
+          font-size: 10px;
+          padding: 10px;
+          @include default-hover();
+          &:hover,&:focus{
+            background: none;
+            color: $primary-color;
+          }
+        }
+
+        > .btn.btn-decre{
+          padding: 10px 9px 11px;
+        }
+
+        &:first-child > .btn{
+          margin-right: 0;
+        }
+        &:last-child > .btn{
+          margin-left: 0;
+        }
+      }
+
+      .gico-icon{
+        vertical-align: middle;
+      }
+
+      .icon-minus{
+        font-size: 0.24em;
+      }
+
+
+    }
+  }
+
+  }
+}
+
+.cart-sidebar{
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 27px 19px;
+
+  .price-info{
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+      display: block;
+      overflow: hidden;
+      padding: 15px 0;
+      border-bottom: dashed 1px #979797;
+      label{
+        margin: 0;
+        font-size: 17px;
+        float: left;
+      }
+
+      span{
+        float: right;
+        font-size: 17px;
+      }
+
+
+      &:last-child{
+        border: 0 none;
+
+        span{
+          font-size: 14px;
+          float: none;
+          display: block;
+          a{
+            color: $primary-color;
+            @include default-hover();
+          }
+        }
+      }
+
+      .btn{
+        font-size: 16px;
+        padding: 11px 12px;
+        border-radius: 4px;
+      }
+
+    }
+
+    .sub-price{
+      line-height: 25px;
+
+      span{
+        font-size: 14px;
+      }
+
+      span.price{
+        font-size: 21px;
+      }
+      @media(max-width: $screen-md-max){
+        span.price{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: $screen-sm-max){
+  .cart-sidebar{
+    margin-top: 24px;
+  }
+}
+
+.product-slider{
+  display:block;
+  overflow: hidden;
+  margin: 24px 0 0;
+  background: #fff;
+  padding: 22px 26px;
+
+  .js-carousel.owl-carousel{
+    display: block;
+
+    .product-item{
+      float: left;
+    }
+  }
+
+  .js-carousel.owl-carousel.owl-loaded{
+    .product-item{
+      float: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .owl-prev,.owl-next{
+      position: absolute;
+      top: 50%;
+      margin-top: -44px;
+      width: 40px;
+      height: 88px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: -2px 0 7px 0 rgba(51, 51, 51, 0.2);
+      left: 0;
+      color: $tertiary-color;
+      @include default-hover();
+
+      .gico-icon{
+        font-size: 20px;
+      }
+
+      &:hover{
+        color: $primary-color;
+      }
+    }
+
+    .owl-next{
+      left: auto;
+      right: 0;
+    }
+  }
+
+  @media(min-width: $screen-md-min) {
+    .product-item{
+      max-width: 250px;
+      width: 20%;
+    }
+  }
+
+  .row.owl-carousel{
+    display: block;
+  }
+
+  .row.js-carousel.owl-loaded{
+    margin:0;
+    .product-item{
+      width: auto;
+      max-width: none;
+      float: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .owl-prev,.owl-next{
+      position: absolute;
+      top: 50%;
+      margin-top: -44px;
+      width: 40px;
+      height: 88px;
+      border-radius: 4px;
+      background-color: #ffffff;
+      box-shadow: -2px 0 7px 0 rgba(51, 51, 51, 0.2);
+      left: 0;
+      color: $tertiary-color;
+      @include default-hover();
+
+      .gico-icon{
+        font-size: 20px;
+      }
+
+      &:hover{
+        color: $primary-color;
+      }
+    }
+
+    .owl-next{
+      left: auto;
+      right: 0;
+    }
+  }
+
+
+}

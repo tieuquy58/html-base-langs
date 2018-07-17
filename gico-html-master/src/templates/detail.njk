@@ -1,0 +1,51 @@
+{% extends "layouts/default.njk" %}
+{% set pageTitle = 'Detail' %}
+{% set bodyClasses = 'page-detail-product' %}
+{% block content %}
+  {% include "./components/breadcrumb-detail.njk" %}
+  <div class="gico-main pd-main">
+    <div class="container">
+      	<div class="pd-detail pd-box">
+        	{% include "./components/product-detail.njk" %}
+      	</div>
+	    <div class="pd-viewed pd-box">
+	      	<div class="product-slider">
+	      		<h3 class="frm-title">Sản phẩm thường được xem cùng</h3>
+	      		<div class="js-carousel owl-carousel">
+			      	{% for i in range(0, 6) %}
+						{% include "./components/product-item.njk" %}
+					{% endfor %}
+				</div>
+			</div>
+	    </div>
+	    <div class="pd-info pd-box">
+	      		<h3 class="frm-title">Thông tin chi tiết</h3>
+	      		{% include "./components/product-detail-info.njk" %}
+	    </div>
+      	<div class="pd-viewed pd-box">
+      		<div class="product-slider">
+	      		<h3 class="frm-title">Sản phẩm cùng thương hiệu</h3>
+	      		<div class="js-carousel owl-carousel">
+			      	{% for i in range(0, 6) %}
+						{% include "./components/product-item.njk" %}
+					{% endfor %}
+				</div>
+			</div>
+     	</div>
+      	<div class="pd-review pd-box">
+      		<h3 class="frm-title">Hỏi đáp về sản phẩm</h3>
+      		<div class="row">
+      			<div class="col-xs-12 col-sm-4 col-md-3 r-score">
+      				1111
+      			</div>
+      			<div class="col-xs-12 col-sm-4 col-md-6 r-star">
+      				2222
+      			</div>
+      			<div class="col-xs-12 col-sm-4 col-md-3 r-action">
+      				3333
+      			</div>
+      		</div>
+     	</div>
+    </div>
+  </div>
+{% endblock %}

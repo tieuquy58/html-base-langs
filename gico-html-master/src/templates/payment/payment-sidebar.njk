@@ -1,0 +1,54 @@
+<div class="block block-order-review">
+	<div class="block-title">
+		<strong>Đơn hàng (3)</strong>
+	</div>
+	<div class="block-content">
+		{% for i in range(0, 4) %}
+		<div class="order-item">
+			<div class="item-img">
+				<img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/7f/6b/06/0dfbfb741726ebf3306a6d2f94ff20f1.jpg" alt="" />
+			</div>
+			<div class="item-info">
+				<p>10.490.000 ₫</p>
+				<p>x1</p>
+				<p>10.490.000 ₫</p>
+			</div>
+			<div class="item-name">
+				<h2><a href="#" title="Điện Thoại Samsung Galaxy Note 8 - Hàng Chính Hãng">Điện Thoại Samsung Galaxy Note 8 - Hàng Chính Hãng</a></h2>
+			</div>
+		</div>
+		{% endfor %}
+		<div class="discount-code">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Nhập mã giảm giá">
+				<div class="input-group-btn">
+					<button type="submit" class="btn btn-default btn-primary">Áp dụng</button>
+				</div>
+			</div>
+		</div>
+		<div class="checkout-info">
+			<ul class="reset">
+				<li class="total">
+					<label>Tổng tiền</label>
+					<span>20,000,000đ</span>
+				</li>
+				<li class="ship">
+					<label>Phí vận chuyển đơn hàng</label>
+					<span>Miễn phí</span>
+				</li>
+				<li class="voucher">
+					<label>Ưu đãi</label>
+					<span>-200.000đ</span>
+				</li>
+				<li class="sub-total">
+					<label>Số tiền cần thanh toán</label>
+					<span class="price">20,200,000đ</span>
+					<span class="notice">( Đã bao gồm VAT)</span>
+				</li>
+				<li>
+					<button class="btn btn-primary btn-default btn-full">Thanh toán</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

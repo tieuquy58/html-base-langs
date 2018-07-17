@@ -1,0 +1,28 @@
+<div class="gico-filter-sidebar" id="js-filter-container">
+  <div class="filter-sidebar-heading hidden-md hidden-lg">
+    <button class="btn-back js-close-filter">
+      <i class="gico-icon icon-left-arrow"></i>
+    </button>
+    <div class="filter-title text-uppercase text-semibold">
+      Bộ lọc
+    </div>
+  </div>
+  <div class="filter-sidebar-body">
+    {% include "./_category.njk" %}
+    {% include "./_checkbox.njk" %}
+  </div>
+  <div class="filter-sidebar-footer hidden-md hidden-lg">
+    <div class="row row-no-gutter">
+      <div class="col-xs-6">
+        <button class="btn btn-negative btn-block btn-lg text-semibold text-uppercase">
+          Thiết lập lại
+        </button>
+      </div>
+      <div class="col-xs-6">
+        <button class="btn btn-positive btn-block btn-lg text-semibold text-uppercase">
+          Hoàn tất
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

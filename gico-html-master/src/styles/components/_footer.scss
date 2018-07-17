@@ -1,0 +1,104 @@
+.gico-footer {
+  background-color: #fff;
+  .gico-about{
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    padding: 34px 0 39px;
+    h4{
+      margin: 0 0 32px;
+      padding: 0;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+    p{
+      margin: 0;
+    }
+  }
+
+  .gico-fb{
+    text-align: right;
+    display: block;
+    padding: 51px 0 0;
+  }
+
+  .footer-link{
+    .row{
+      > div{
+        width: 20%;
+        padding-bottom: 31px;
+      }
+    }
+
+    h4{
+      margin: 0 0 16px;
+      text-align: left;
+      color: #333333;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+    p{
+      margin: 0;
+      line-height: 27px;
+      font-size: 13px;
+    }
+
+    ul {
+      margin: 0;
+      li {
+        line-height: 27px;
+        a{
+          font-size: 13px;
+          color: #333;
+          @include default-hover();
+  
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .icon-all-payment{
+      background: url('../images/list-payment.png') no-repeat left top scroll transparent;
+      width: 198px;
+      height: 93px;
+      display: block;
+      background-size: 100%;
+    }
+
+    @media(max-width: $screen-sm-max){
+      h4{
+        min-height: 40px;
+      }
+      .icon-all-payment{
+        width: 100%;
+      }
+    }
+  }
+
+  .footer-adwords{
+    padding: 17px 0 43px;
+    border-top: solid 1px #edecf2;
+
+    a{
+      color: #999;
+      font-size: 12px;
+      @include default-hover();
+
+      &:after{
+        content: "/";
+        display: inline;
+        margin: 0 0 0 3px;
+      }
+      &:last-child:after{
+        display: none;
+      }
+    }
+    
+  }
+}

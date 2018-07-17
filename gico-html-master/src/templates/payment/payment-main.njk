@@ -1,0 +1,30 @@
+<div class="payment-body">
+	<h3 class="frm-title">Phương thức thanh toán</span></h3>
+	<div class="payment-list">
+      	<ul class="reset">
+      		{% for i in range(0, 4) %}
+      		<li class="row">
+                        <div class="radio-box col-xs-8 col-sm-8 col-md-8 col-lg-8">
+            			<label class="styled-radio type2">
+                              <input type="radio" class="styled-radio-input" name="radioPay" value="">
+                              <span class="styled-radio-box"></span>
+                        	Thanh toán khi nhận hàng
+                              </label>
+                              <p>Quý khách sẽ thanh toán bằng tiền mặt hoặc thẻ khi giao hàng</p>
+                              <p>Quý khách sẽ thanh toán bằng tiền mặt hoặc thẻ khi giao hàng</p>
+                        </div>
+                        <div class="action col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                              <a class="btn btn-default btn-edit" href="#" title="Sửa">Sửa</a>
+                              <a class="btn btn-default btn-trash" href="#" title="Xóa"><i class="gico-icon icon-trash"></i></a>
+                        </div>
+      		</li>
+      		{% endfor %}
+      	</ul>
+	</div>
+</div>
+<div class="payment-bot">
+      <a href="#" title="nhấp để sửa thông tin giao hàng"><i class="gico-icon icon-edit"></i>Chỉnh sửa thông tin giao hàng</a>
+      <div class="clearfix"></div>
+      <button class="btn btn-default btn-primary btn-full">Thanh toán</button>
+      <p>Bằng việc ấn nút Thanh toán trên, Quý khách xác nhận đã kiểm tra kỹ thông tin đơn hàng với Điều khoản & Điều kiện giao dịch của Gico</p>
+</div>

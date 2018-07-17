@@ -1,0 +1,27 @@
+@mixin eq-height {
+  display: flex;
+  flex-wrap: wrap;
+
+  &::after,
+  &::before {
+    content: normal; // IE doesn"t support `initial`
+  }
+
+  > div {
+    background-clip: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; // FF 47-
+    -webkit-flex-direction: row; // iOS safari
+    -ms-flex-direction: column; // IE11
+  }
+}
+
+@mixin default-radius {
+  border-radius: $border-radius-base;
+}
+
+@mixin box-white{
+  background: $light-color;
+  border-radius: $border-radius-base;
+}

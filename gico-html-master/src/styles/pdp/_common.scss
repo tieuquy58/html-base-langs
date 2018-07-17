@@ -1,0 +1,16 @@
+.page-pdp {
+  @media(max-width: $screen-sm-max) {
+    padding-bottom: 48px;
+  }
+}
+
+.pdp-main {
+  overflow: hidden;
+    padding: 24px 0;
+  @media(max-width: $screen-sm-max) {
+    padding: 16px 0;
+  }
+  @media(max-width: $screen-xs-max) {
+    padding: 12px 0;
+  }
+}

@@ -1,0 +1,545 @@
+.payment-main{
+	background: $secondary-bg;
+	padding: 27px 0 83px;
+
+	.payment-body{
+		display: block;
+		background: $light-color;
+		padding: 22px 20px 22px 44px;
+		@include default-radius();
+
+		.frm-title{
+			padding: 0;
+			margin: 0 0 28px;
+
+			&:before{
+				left: -20px;
+			}
+		}
+
+		.payment-list{
+
+			ul li{
+				display: block;
+				overflow: hidden;
+				border-bottom: dotted 1px #cbcbd0;
+				padding-bottom: 19px;
+				margin-bottom: 19px;
+
+				&:last-child{
+					border: 0 none;
+				}
+
+				.radio-box{
+					font-size: 15px;
+
+					label{
+						font-weight: 500;
+					}
+
+					p{
+						color: $secondary-color;
+						margin: 0;
+						padding-left: 32px;
+					}
+				}
+
+				.action{
+					text-align: right;
+
+					.btn-edit{
+						padding: 7px 27px;
+					}
+
+					.btn-trash{
+						padding: 7px 17px;
+					}
+				}
+
+				&:last-child{
+					margin: 0;
+				}
+			}
+
+			&.address{
+				margin-bottom: 16px;
+
+				.notice{
+					padding: 0;
+
+					.form-group{
+						margin: 0;
+					}
+
+					label{
+						font-weight: 400;
+						font-size: 15px;
+						margin-bottom: 19px;
+						span{
+							color: $tertiary-color;
+						}
+					}
+
+					textarea{
+						font-size: 15px;
+						padding: 17px 28px;
+						border-radius: 8px;
+						border: 1px dashed #979797;
+						box-shadow: none;
+					}
+				}
+			}
+		}
+
+	}
+
+	.thank-content{
+		background: $light-color;
+		@include default-radius();
+		margin-bottom: 16px;
+
+		.col-img{
+			text-align: center;
+			padding: 85px 8px 82px 64px;
+			img{
+				max-width: 100%;
+			}
+		}
+
+		.col-content{
+			padding: 50px 113px 50px 19px;
+			font-size: 15px;
+
+			h1{
+				font-weight: 400;
+				margin: 0 0 12px;
+				color: #67b931;
+				font-size: 30px;
+			}
+
+			label{
+				float: left;
+				padding: 6px 13px;
+				background: #67b931;
+				border-radius: 16px;
+				color: #fff;
+				text-align: center;
+				font-weight: 400;
+				font-size: 17px;
+				margin: 0 0 18px;
+			}
+
+			p{
+				span{
+					font-weight: 600;
+				}
+
+				&:last-child{
+					margin-top: 13px;
+				}
+			}
+		}
+	}
+
+	.order-review{
+		background: $light-color;
+		@include default-radius();
+		padding: 22px 20px 32px 44px;
+
+		.frm-title{
+			padding: 0;
+			margin: 0 0 28px;
+
+			&:before{
+				left: -20px;
+			}
+		}
+
+		.order-table{
+			display: block;
+			overflow: hidden;
+
+			.order-head{
+				overflow: hidden;
+				border: 1px solid $border-color;
+				> div{
+					float: left;
+					padding: 11px 8px;
+					font-weight: 500;
+					font-size: 15px;
+				}
+			}
+
+			.order-body{
+				
+				.order-item{
+					display: block;
+					overflow: hidden;
+					border-bottom: 1px dashed #979797;
+					> div{
+						padding: 16px 8px;
+						float: left;
+						font-size: 15px;
+					}
+				}
+			}
+
+			.order-name{
+				width: 45%;
+				padding-left: 25px;
+
+				> img{
+					width: 100%;
+					max-width: 89px;
+					display: inline-block;
+				}
+
+				h2{
+					margin: 0;
+					font-weight: 400;
+					font-size: 15px;
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+
+			.order-footer{
+				float: right;
+				width: 100%;
+				max-width: 346px;
+				padding-top: 16px;
+
+				ul li{
+					display: block;
+					overflow: hidden;
+					font-size: 15px;
+					margin: 0 0 10px;
+
+					label{
+						float: left;
+						font-weight: 400;
+						margin: 0;
+					}
+
+					span{
+						float: right;
+					}
+
+					&.ship{
+						span{
+							color: #67b931;
+						}
+					}
+
+					&.voucher{
+						margin-bottom: 21px;
+						span{
+							color: $primary-color;
+						}
+					}
+
+					&.sub-price{
+						border-top: 1px dashed #979797;
+						padding: 18px 0 0;
+						margin: 0;
+
+						label{
+							font-size: 17px;
+							line-height: 24px;
+						}
+						span{
+							color: $red-color;
+							font-weight: 500;
+							font-size: 21px;
+
+							&.note{
+								color: $secondary-color;
+								font-weight: 400;
+								font-size: 14px;
+								clear: both;
+								margin-top: 3px;
+							}
+						}
+					}
+
+				}
+
+			}
+
+			.order-manu{
+				width: 15%;
+			}
+			.order-qty{
+				width: 10%;
+			}
+			.order-price{
+				width: 15%;
+			}
+			.order-subprice{
+				width: 15%;
+			}
+
+
+
+		}
+	}
+
+	.payment-mid{
+
+		&.address{
+
+			margin-top: 16px;
+
+			.frm-title{
+				padding: 0;
+    			margin: 0 0 28px;
+
+    			&:before{
+    				left: -20px;
+    			}
+			}
+
+
+			.time-cod{
+				background: $light-color;
+				@include default-radius();
+				padding: 22px 20px 22px 44px;
+
+				label{
+					font-size: 15px;
+					color: $secondary-color;
+					margin: 0;
+					font-weight: 400;
+
+					span{
+						text-transform: uppercase;
+						color: #67b931;
+					}
+				}
+
+				.select-box{
+					display: inline-block;
+					width: auto;
+					min-width: 150px;
+					margin: 0 8px;
+
+					select{
+						padding: 0px 37px 0 11px;
+						font-weight: 500;
+						color: $text-color;
+						font-size: 15px;
+						box-shadow: none;
+						border: solid 1px #cbcbd0;
+						background: #fff;
+					}
+				}
+
+				p{
+					margin: 14px 0 0;
+					font-size: 15px;
+
+					span{
+						font-weight: 500;
+					}
+				}
+			}
+
+			.order-vat{
+				margin-top: 16px;
+				background: $light-color;
+				@include default-radius();
+				padding: 22px 20px 22px 24px;
+
+				label{
+					font-size: 24px;
+					padding-left: 40px;
+					margin: 0;
+    				vertical-align: middle;
+				}
+
+				.styled-checkbox-box{
+					border-color: #cbcbd0;
+				}
+
+			}
+
+		}
+	}
+
+	.payment-bot{
+			
+		padding: 21px 0;
+
+		a{
+			@include default-hover;
+			color: $primary-color;
+			font-size: 17px;
+			float: left;
+
+
+			.gico-icon{
+				font-size: 20px;
+				margin-right: 11px;
+				vertical-align: middle;
+			}
+		}
+
+		button.btn{
+			margin: 21px 0 21px;
+			font-size: 20px;
+			padding: 17px 12px;
+		}
+
+		p{
+			margin: 0 auto;
+			color: $tertiary-color;
+			text-align: center;
+			width: 80%;
+			max-width: 401px;
+			letter-spacing: -0.4px;
+		}
+
+		&.address{
+			padding: 16px 0;
+
+			.btn{
+				margin: 0;
+				.gico-icon{
+					font-size: 16px;
+					vertical-align: middle;
+					margin-left: 12px;
+				}
+			}
+		}
+	}
+
+	.block-order-review{
+		.order-item{
+			overflow: hidden;
+			display: block;
+
+			margin-bottom: 28px;
+
+			.item-img{
+				width: 72px;
+				text-align: center;
+				overflow: hidden;
+				float: left;
+				img{
+					max-width: 100%;
+					max-height: 72px;
+				}
+			}
+
+			.item-name{
+				margin-left: 85px;
+				margin-right: 104px;
+
+				h2{
+					margin: 0;
+					font-size: 14px;
+					line-height: 1.5;
+					font-weight: 400;
+					a{
+						color: $text-color;
+						@include default-hover();
+
+						&:hover{
+							color: $primary-color;
+						}
+					}
+				}
+				
+			}
+
+			.item-info{
+				float: right;
+				width: 94px;
+				text-align: right;
+				p{
+					margin: 0;
+					color: $text-color;
+					line-height: 1.5;
+				}
+			}
+			
+		}
+
+		.discount-code{
+
+			margin-bottom: 37px;
+
+			input.form-control{
+				@include default-radius();
+				height: 32px;
+			}
+
+			button.btn{
+				@include default-radius();
+				padding: 8px 17px;
+				margin-left: 7px;
+			}
+		}
+
+		.checkout-info{
+			ul li{
+
+				display: block;
+				overflow: hidden;
+				font-size: 15px;
+				line-height: 1.5;
+
+				span{
+					float: right;
+					margin-bottom: 5px;
+				}
+
+				label{
+					float: left;
+					font-weight: 400;
+					margin: 0;
+					margin-bottom: 5px;
+				}
+
+				.notice{
+					clear: both;
+					color: $secondary-color;
+					margin: 0;
+				}
+			}
+
+			.sub-total{
+				padding: 20px 0;
+				border-top: 1px dashed #979797;
+				border-bottom: 1px dashed #979797;
+				margin: 16px 0;
+				label{
+					font-size: 17px;
+					line-height: 25px;
+					margin: 0;
+				}
+				.price{
+					color: $red-color;
+					font-size: 21px;
+					font-weight: 500;
+					line-height: 25px;
+					margin: 0;
+				}
+			}
+
+			.btn{
+				font-size: 17px;
+			}
+
+
+		}
+	}
+
+
+}
+
+.page-payment-thank{
+	.payment-main{
+		padding:0 0 55px;
+	}
+}
